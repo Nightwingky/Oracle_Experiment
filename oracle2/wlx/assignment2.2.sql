@@ -1,20 +1,16 @@
--- *******************************************
--- *********** DDL DML DCL 实验***************
--- *******************************************
-
 -- create user
-create user WLX303 IDENTIFIED by WLX303
+create user qky1024 IDENTIFIED by qky1024
 TEMPORARY TABLESPACE TEMP
 DEFAULT TABLESPACE USERS;
 
 -- grant
-grant connect, resource ,create view,create procedure to WLX303;
+grant connect, resource ,create view,create procedure to qky1024;
 
 -- switch user and check new user
-conn WLX303/WLX303;
+conn qky1024/qky1024;
 
 -- alter pwd
-alter USER WLX303 IDENTIFIED BY WLX303
+alter USER qky1024 IDENTIFIED BY qky1024
 
 select * from user_users;
 
